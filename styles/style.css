@@ -1,0 +1,23 @@
+/* assign color variables */
+
+/*      Selection List
+•	#C53436	Tomato Jam
+•	#FFDE42	Mustard
+•	#D2AC78	Soft Fawn
+•	#053762	Oxford Navy
+•	#A4C4C9	Light Blue
+•	#B5D0FF	Baby Blue Ice
+•	#CEE3F3	Pale Sky        */
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    display: border;
+    border: 2px solid black;
+}
