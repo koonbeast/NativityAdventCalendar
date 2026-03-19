@@ -10,6 +10,23 @@
 •	#CEE3F3	Pale Sky        */
 
 
+/* assign font variables
+
+        Selection List
+
+•	Merienda
+•	Boogaloo */
+
+
+/* @import url(); */
+
+:root{
+    --large-text: Boogaloo, sans-serif;
+    --small-text: Merienda, cursive;
+    --color: ;
+}
+
+
 
 * {
     padding: 0;
@@ -35,7 +52,7 @@ nav {
 
 a {
     text-decoration: none;
-    color: ;
+    color: #C53436;
 }
 
 #calendar {
@@ -53,9 +70,12 @@ tr, th, td {
 
 td, th {
     width: 100px;
-    max-width: 100px;
     height: 100px;
-    max-height: 100px;
+}
+
+th {
+    font-family: var(--large-text);
+    letter-spacing: .08em;
 }
 
 td {
@@ -74,26 +94,23 @@ footer {
 .dayn {
     text-align: right;
     align-items: start;
+    margin-right: .1em;
 }
 
 .dayt {
     text-align: center;
-    margin-top: -1em;
-    margin-bottom: 1em;
+    margin-top: -.6em;
+    margin-bottom: .7em;
+    font-family: var(--large-text);
+    font-weight: 300;
 }
 
-.days {
-    margin: .3em .3em 0;
+.days, .daym {
+    margin: .9em .3em 0;
+    font-family: var(--small-text);
+    font-weight: 400;
+    font-size: 55%;
 }
-
-.daym {
-    margin: .3em .3em 0;
-}
-
-/* .daytldb {
-    text-align: center;
-    margin-top: -.5em;
-} */
 
 #printout {
     align-content: center;
