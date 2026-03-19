@@ -30,17 +30,16 @@ nav {
     display: flex;
     justify-content: space-evenly;
     text-align: center;
-    padding-bottom: 1em;
+    padding: .5em;
 }
 
-nav a {
+a {
     text-decoration: none;
+    color: ;
 }
 
 #calendar {
-    /* display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr; */
+    margin: 2em 0;
 }
 
 table {
@@ -52,11 +51,51 @@ tr, th, td {
     border: 1px solid black;
 }
 
-td {
+td, th {
     width: 100px;
+    max-width: 100px;
     height: 100px;
+    max-height: 100px;
+}
+
+td {
+    align-content: start;
 }
 
 #logo {
-    max-width: 100px;
+    max-width: 99px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dayn {
+    text-align: right;
+    align-items: start;
+}
+
+.dayt {
+    text-align: center;
+    margin-top: -1em;
+    margin-bottom: 1em;
+}
+
+.days {
+    margin: .3em .3em 0;
+}
+
+.daym {
+    margin: .3em .3em 0;
+}
+
+/* .daytldb {
+    text-align: center;
+    margin-top: -.5em;
+} */
+
+#printout {
+    align-content: center;
+    text-align: center;
 }
