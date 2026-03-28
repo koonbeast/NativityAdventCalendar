@@ -23,7 +23,13 @@
 :root{
     --large-text: Boogaloo, sans-serif;
     --small-text: Merienda, cursive;
-    --color: ;
+    --background-color: #B5D0FF;
+    --calendar-color: #A4C4C9;
+    --link-text: #C53436;
+    --standard-text: #053762;
+    --heading-background-color: #CEE3F3;
+    --border-color: #D2AC78;
+    --golden-shadow: #FFDE42;
 }
 
 
@@ -39,33 +45,36 @@ body {
     align-content: center;
     margin: auto;
     margin-top: 1vw;
+    background-color: var(--background-color);
 }
 
 nav {
     display: border;
-    border: 2px solid black;
+    border: 8px solid var(--border-color);
     display: flex;
     justify-content: space-evenly;
     text-align: center;
     padding: .5em;
 }
 
-a {
+nav a, #printout a {
     text-decoration: none;
-    color: #C53436;
+    color: var(--link-text);
+    font-family: var(--small-text);
 }
 
 #calendar {
-    margin: 2em 0;
+    margin-top: 2em;
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
+    color: var(--standard-text);
 }
 
 tr, th, td {
-    border: 1px solid black;
+    border: 2px solid var(--border-color);
 }
 
 td, th {
@@ -76,10 +85,17 @@ td, th {
 th {
     font-family: var(--large-text);
     letter-spacing: .08em;
+    background-color: white;
+    color: black;
 }
 
 td {
     align-content: start;
+    background-color: var(--calendar-color);
+}
+
+#heading, #printout, nav {
+    background-color: var(--heading-background-color);
 }
 
 #logo {
@@ -89,6 +105,7 @@ td {
 footer {
     display: flex;
     justify-content: space-between;
+    margin-top: 2em;
 }
 
 .dayn {
@@ -105,6 +122,15 @@ footer {
     font-weight: 300;
 }
 
+.dayt a {
+    text-decoration: none;
+    color: var(--standard-text);
+}
+
+a:hover {
+    text-shadow: 0 0 8px var(--golden-shadow);
+}
+
 .days, .daym {
     margin: .9em .3em 0;
     font-family: var(--small-text);
@@ -116,3 +142,6 @@ footer {
     align-content: center;
     text-align: center;
 }
+
+/* This will be a section specifically for the individual day pages, and should not effect the index page or any other non-day pages. */
+
