@@ -55,16 +55,13 @@ nav {
     justify-content: space-evenly;
     text-align: center;
     padding: .5em;
+    margin-bottom: 2em;
 }
 
 nav a, #printout a {
     text-decoration: none;
     color: var(--link-text);
     font-family: var(--small-text);
-}
-
-#calendar {
-    margin-top: 2em;
 }
 
 table {
@@ -145,3 +142,49 @@ a:hover {
 
 /* This will be a section specifically for the individual day pages, and should not effect the index page or any other non-day pages. */
 
+#daybox {
+    width: 700px;
+    height: 700px;
+    margin-top: 5em;
+    border: 3px solid var(--border-color);
+    justify-items: center;
+    background-color: var(--calendar-color);
+    font-family: var(--small-text);
+    color: var(--standard-text);
+}
+
+.calbox {
+    margin-top: -3.1em;
+    border: 2px solid var(--border-color);
+    max-width: fit-content;
+    padding: 4px 15px;
+    background-color: var(--calendar-color);
+    font-family: var(--large-text);
+}
+
+.vtitlebox {
+    margin-top: 2em;
+}
+
+.imbedv {
+    border: 2px solid black;
+    width: 500px;
+    height: 282px;
+    margin-top: .5em;
+}
+
+.scrititlebox {
+    text-decoration: underline wavy 1px var(--standard-text);
+    margin-top: 2em;
+}
+
+.scriversebox {
+    margin-top: .5em;
+    width: 500px;
+    height: 238px;
+    text-indent: 23px;
+    margin-bottom: 4em;
+    font-size: 90%;
+    display: flex;
+    align-items: center;
+}
