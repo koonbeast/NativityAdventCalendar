@@ -56,6 +56,7 @@ nav {
     text-align: center;
     padding: .5em;
     margin-bottom: 2em;
+    box-shadow: 1px 2px 9px black;
 }
 
 nav a, #printout a {
@@ -68,6 +69,7 @@ table {
     width: 100%;
     border-collapse: collapse;
     color: var(--standard-text);
+    box-shadow: 1px 2px 9px black;
 }
 
 tr, th, td {
@@ -152,15 +154,17 @@ a:hover {
     background-color: var(--calendar-color);
     font-family: var(--small-text);
     color: var(--standard-text);
+    box-shadow: 1px 2px 9px black;
 }
 
 .calbox {
-    margin-top: -3.1em;
+    margin-top: -2.5em;
     border: 2px solid var(--border-color);
     max-width: fit-content;
     padding: 4px 15px;
     background-color: var(--calendar-color);
     font-family: var(--large-text);
+    box-shadow: 1px 2px 9px black;
 }
 
 .vtitlebox {
